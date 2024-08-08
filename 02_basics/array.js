@@ -1,0 +1,20 @@
+const arr= [1,2,3,4,5]
+console.log(arr.includes(7))
+arr.unshift(0)
+arr.push(9)
+arr.pop()
+arr.shift()
+console.log(arr)
+console.log(arr.indexOf(2))
+const newarray= arr.join()
+console.log(newarray)
+console.log(typeof newarray)
+//slice
+console.log("A", arr)
+const new1=arr.slice(1,3)
+console.log(new1)
+console.log("B", arr)
+//splice
+const newarr2= arr.splice(1,3)
+console.log("c", arr)
+console.log(newarr2)
