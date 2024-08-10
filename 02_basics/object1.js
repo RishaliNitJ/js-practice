@@ -19,11 +19,37 @@ Object.freeze(jsUser) //after using freeze we cant chnge any value inside the ob
 jsUser.email="rishalimicro@gmail"
 //console.log(jsUser)
 jsUser.greeting=function(){
-    console.log("hello js User")
+    //console.log("hello js User")
 }
 jsUser.greetingtwo=function(){
-    console.log(`hello js user,${this.name}`)
+   // console.log(`hello js user,${this.name}`)
 
 }
-console.log(jsUser.greeting());
-console.log(jsUser.greetingtwo());
+// console.log(jsUser.greeting());
+// console.log(jsUser.greetingtwo());
+
+const course={
+    coursename: "javascrpit",
+    price:"999",
+    instructor:"hitesh"
+}
+console.log(course.coursename) //one way to call
+const {coursename:courses} =course //another way to call -->de-structure method
+console.log(courses)
+
+//json format 
+
+{
+    "coursename"= "js",
+    "price"= 999,
+    "instructor"="rishali"
+}
+
+//another way
+
+[
+    {},
+    {},
+    {}
+]
+
